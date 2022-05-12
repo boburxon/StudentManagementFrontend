@@ -1,0 +1,9 @@
+<div class="container py-5">
+    <form>
+        <label for="fullName"></label>
+        <input [(ngModel)]="studentFullName" type="text" id="fullName" name="fullName" placeholder="Full name">
+        <label for="profilePhoto">Profile photo</label>
+        <input (change)="updateProfilePhotoValue($event)" type="file" name="profilePhoto" id="profilePhoto">
+        <button type="button" class="btn btn-primary" (click)="createStudent()">Create</button>
+    </form>
+</div>
